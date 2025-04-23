@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Drugs Campaign</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+   <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex items-center">
+      <div class="flex-shrink-0">
+        <a href="#home" class="text-2xl font-bold text-red-600">Say No to Drugs</a>
+      </div>
+      <div class="flex-grow hidden md:flex justify-center space-x-8">
+        <a href="#home" class="relative pb-1 text-gray-700 hover:text-red-600 transition hover:border-b-2 hover:border-indigo-600">Home</a>
+        <a href="#about" class="relative pb-1 text-gray-700 hover:text-red-600 transition hover:border-b-2 hover:border-indigo-600">About</a>
+        <a href="#blog" class="relative pb-1 text-gray-700 hover:text-red-600 transition hover:border-b-2 hover:border-indigo-600">Blog</a>
+        <a href="#contact" class="relative pb-1 text-gray-700 hover:text-red-600 transition hover:border-b-2 hover:border-indigo-600">Contact</a>
+      </div>
+      <div class="hidden md:flex flex-shrink-0 items-center space-x-2 text-red-600 font-semibold">
+        <i class="fas fa-phone-alt"></i>
+        <span>Emergency: 1800-123-456</span>
+      </div>
+      <button id="nav-toggle" class="md:hidden ml-auto focus:outline-none">
+        <i class="fas fa-bars text-xl text-gray-700"></i>
+      </button>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden bg-white">
+      <a href="#home" class="block px-6 py-3 border-b hover:bg-gray-100">Home</a>
+      <a href="#about" class="block px-6 py-3 border-b hover:bg-gray-100">About</a>
+      <a href="#blog" class="block px-6 py-3 border-b hover:bg-gray-100">Blog</a>
+      <a href="#contact" class="block px-6 py-3 hover:bg-gray-100">Contact</a>
+      <div class="px-6 py-3 border-t text-red-600 font-semibold flex items-center space-x-2">
+        <i class="fas fa-phone-alt"></i>
+        <span>1800-123-456</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Glassmorphism -->
+  <header id="home" class="h-screen flex items-center justify-center bg-cover bg-center pt-16" style="background-image: url('images/ChatGPT\ Image\ Apr\ 23\,\ 2025\,\ 01_21_21\ PM.png');">
+    <div class="bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30 rounded-2xl p-10 max-w-2xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Join Our Mission</h1>
+      <p class="text-lg text-gray-100 mb-6">Be part of a community dedicated to empowering individuals, sharing awareness, and fostering hope. Together, we stand strong against addiction and build healthier, brighter futures.</p>
+      <a href="#about" class="px-8 py-3 bg-indigo-600 bg-opacity-90 text-white font-semibold rounded-full hover:bg-indigo-700 transition-transform transform hover:-translate-y-1">Learn More</a>
+    </div>
+  </header>
+
+    <!-- Quick Stats Section -->
+    <section id="stats" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-600 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-shield-alt text-red-600 text-3xl mr-4"></i>
+                <h3 class="text-2xl font-bold">8500+</h3>
+            </div>
+            <p class="font-semibold">Drug-Related Arrests</p>
+            <p class="text-gray-600 text-sm">Over the past year</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-600 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-users text-red-600 text-3xl mr-4"></i>
+                <h3 class="text-2xl font-bold">200+</h3>
+            </div>
+            <p class="font-semibold">Awareness Programs</p>
+            <p class="text-gray-600 text-sm">Conducted statewide</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-600 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-award text-red-600 text-3xl mr-4"></i>
+                <h3 class="text-2xl font-bold">50+</h3>
+            </div>
+            <p class="font-semibold">Rehabilitation Centers</p>
+            <p class="text-gray-600 text-sm">Working with us</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-600 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-chart-line text-red-600 text-3xl mr-4"></i>
+                <h3 class="text-2xl font-bold">75%</h3>
+            </div>
+            <p class="font-semibold">Reduction in Drug Cases</p>
+            <p class="text-gray-600 text-sm">In target areas</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+  <!-- Our Mission Section -->
+  <section id="mission" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Mission Against Drugs</h2>
+        <p class="text-gray-700 mb-4">The Kerala Police Department is committed to combating drug abuse and trafficking throughout the state. Our comprehensive approach includes enforcement, prevention, education, and rehabilitation.</p>
+        <p class="text-gray-700 mb-6">We work closely with schools, communities, and healthcare providers to create awareness about the dangers of drug use and to provide support to those affected by addiction.</p>
+        <a href="#about" class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-transform transform hover:-translate-y-1">Learn More About Our Initiative</a>
+      </div>
+      <div>
+        <img src="images/stop drugs.jpg" alt="Green Hills" class="rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+   <!-- About Page Section -->
+   <section id="about" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">About Us</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Mission Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+          <div class="flex items-center mb-4">
+            <div class="text-red-600 text-3xl mr-4">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">Our Mission</h3>
+          </div>
+          <p class="text-gray-700">Our mission is to eliminate drug abuse from our society by promoting awareness, enforcing laws strictly, and empowering youth with better choices through education and community support.</p>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+          <div class="flex items-center mb-4">
+            <div class="text-red-600 text-3xl mr-4">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800">Our Vision</h3>
+          </div>
+          <p class="text-gray-700">We envision a drug-free Kerala where communities thrive in safety, health, and well-being, fostering a future where individuals are empowered to lead fulfilling and substance-free lives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campaign Overview Section -->
+  <section id="overview" class="py-20 bg-gradient-to-br from-red-50 via-white to-blue-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Campaign Overview</h2>
+      <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Our campaign employs a multi-faceted approach to tackle drug abuse and trafficking in Kerala, focusing on key areas of intervention.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-search"></i></div>
+          <h3 class="text-xl font-bold mb-2">Enforcement & Surveillance</h3>
+          <p class="mb-4 text-sm text-gray-600">We implement strict monitoring and enforcement measures to identify and dismantle drug trafficking networks operating within Kerala.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Border checkpoints and monitoring</li>
+            <li>Intelligence-led operations</li>
+            <li>Coordination with national agencies</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-graduation-cap"></i></div>
+          <h3 class="text-xl font-bold mb-2">Education & Awareness</h3>
+          <p class="mb-4 text-sm text-gray-600">We conduct educational programs to raise awareness about the dangers of drug abuse, targeting schools, colleges, and community centers.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>School and college programs</li>
+            <li>Public awareness campaigns</li>
+            <li>Parent education workshops</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3 class="text-xl font-bold mb-2">Rehabilitation Support</h3>
+          <p class="mb-4 text-sm text-gray-600">We partner with rehabilitation centers to provide support services for individuals struggling with drug addiction.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Referral to treatment centers</li>
+            <li>Follow-up care coordination</li>
+            <li>Family support services</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-users"></i></div>
+          <h3 class="text-xl font-bold mb-2">Community Engagement</h3>
+          <p class="mb-4 text-sm text-gray-600">We involve local communities in our anti-drug efforts, empowering citizens to take ownership of the issue within their neighborhoods.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Neighborhood watch programs</li>
+            <li>Community policing initiatives</li>
+            <li>Volunteer engagement</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-child"></i></div>
+          <h3 class="text-xl font-bold mb-2">Youth Empowerment</h3>
+          <p class="mb-4 text-sm text-gray-600">We focus on empowering young people with the knowledge and skills to make healthy choices and resist peer pressure.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Student ambassador programs</li>
+            <li>Life skills training</li>
+            <li>Peer counseling initiatives</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-transform border-t-4 border-red-500">
+          <div class="text-red-500 text-3xl mb-4"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-xl font-bold mb-2">Research & Monitoring</h3>
+          <p class="mb-4 text-sm text-gray-600">We conduct ongoing research to understand drug abuse trends in Kerala and continuously monitor the effectiveness of our interventions.</p>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Data collection and analysis</li>
+            <li>Program evaluation</li>
+            <li>Strategy refinement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog & Resources Section -->
+  <section id="blog" class="py-20 bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-indigo-900 mb-12">Blog & Resources</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Blog cards here -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="images/young-drugs.webp" class="w-full h-48 object-cover" alt="Blog">
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-1">June 15, 2023 • Dr. Arun Kumar</p>
+            <h3 class="text-lg font-bold text-black-800 mb-2">Understanding Drug Abuse and Its Effects on Youth</h3>
+            <p class="text-gray-600 text-sm mb-4">Learn the warning signs and how to prevent drug abuse among Kerala’s youth.</p>
+            <a href="#" class="text-red-600 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="images/police-drug.jpeg" class="w-full h-48 object-cover" alt="Campaign">
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-1">July 3, 2023 • Inspector Priya Menon</p>
+            <h3 class="text-lg font-bold text-black-800 mb-2">Kerala Police Anti-Drug Campaign Success Stories</h3>
+            <p class="text-gray-600 text-sm mb-4">Community safety improvements through recent anti-drug operations.</p>
+            <a href="#" class="text-red-600 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="images/rehab-drug2.webp" class="w-full h-48 object-cover" alt="Rehabilitation">
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-1">August 10, 2023 • Social Worker Rajan Thomas</p>
+            <h3 class="text-lg font-bold text-black-800 mb-2">Rehabilitation Programs for Drug Addicts in Kerala</h3>
+            <p class="text-gray-600 text-sm mb-4">Explore Kerala’s support services for individuals battling addiction.</p>
+            <a href="#" class="text-red-600 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Show More Button -->
+      <div class="mt-10 text-center">
+        <button class="px-6 py-3 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition-colors">Show More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Can Help Section (Unchanged) -->
+  <section id="help" class="py-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">How We Can Help</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto mb-10">Kerala Police offers various services to combat drug abuse and support affected individuals and communities.</p>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-transform shadow-lg">
+          <div class="mb-4 text-3xl"><i class="fas fa-exclamation-triangle"></i></div>
+          <h3 class="font-bold text-xl mb-2">Report Drug Activity</h3>
+          <p class="text-sm mb-4">Anonymously report drug sales, trafficking, or other suspicious activities in your area.</p>
+          <a href="#" class="text-white font-semibold underline">Report Now →</a>
+        </div>
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-transform shadow-lg">
+          <div class="mb-4 text-3xl"><i class="fas fa-book-open"></i></div>
+          <h3 class="font-bold text-xl mb-2">Drug Education</h3>
+          <p class="text-sm mb-4">Access educational resources about drug prevention and awareness for schools and communities.</p>
+          <a href="#" class="text-white font-semibold underline">Learn More →</a>
+        </div>
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-transform shadow-lg">
+          <div class="mb-4 text-3xl"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="font-bold text-xl mb-2">Community Programs</h3>
+          <p class="text-sm mb-4">Participate in community-based drug prevention programs and initiatives.</p>
+          <a href="#" class="text-white font-semibold underline">View Programs →</a>
+        </div>
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-transform shadow-lg">
+          <div class="mb-4 text-3xl"><i class="fas fa-phone-alt"></i></div>
+          <h3 class="font-bold text-xl mb-2">Help & Support</h3>
+          <p class="text-sm mb-4">Get information about rehabilitation centers and support services for drug addicts.</p>
+          <a href="#" class="text-white font-semibold underline">Get Help →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Contact Us Section -->
+   <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-red-700 mb-2">Contact Us</h2>
+      <p class="text-center text-gray-600 text-lg mb-10">Reach out to our helplines for any emergency or assistance related to drug prevention.</p>
+      <div class="grid md:grid-cols-4 gap-6 mb-16">
+        <!-- Cards -->
+        <div class="bg-white border-t-4 border-red-500 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Anti-Narcotics Cell</h3>
+          <p class="text-sm text-gray-600"><i class="fas fa-phone-alt text-red-500 mr-2"></i>+91 471 2318119</p>
+          <p class="text-sm text-gray-600 mt-1"><i class="fas fa-envelope text-red-500 mr-2"></i>antinarcotics@keralapolice.gov.in</p>
+        </div>
+        <div class="bg-white border-t-4 border-red-500 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Child Helpline</h3>
+          <p class="text-sm text-gray-600"><i class="fas fa-phone-alt text-red-500 mr-2"></i>1098</p>
+          <p class="text-sm text-gray-600 mt-1"><i class="fas fa-envelope text-red-500 mr-2"></i>childline@keralapolice.gov.in</p>
+        </div>
+        <div class="bg-white border-t-4 border-red-500 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Women Helpline</h3>
+          <p class="text-sm text-gray-600"><i class="fas fa-phone-alt text-red-500 mr-2"></i>1091</p>
+          <p class="text-sm text-gray-600 mt-1"><i class="fas fa-envelope text-red-500 mr-2"></i>women@keralapolice.gov.in</p>
+        </div>
+        <div class="bg-white border-t-4 border-red-500 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Traffic Helpline</h3>
+          <p class="text-sm text-gray-600"><i class="fas fa-phone-alt text-red-500 mr-2"></i>1073</p>
+          <p class="text-sm text-gray-600 mt-1"><i class="fas fa-envelope text-red-500 mr-2"></i>traffic@keralapolice.gov.in</p>
+        </div>
+      </div>
+
+      <!-- Send Us a Message & Contact Info -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Message Form -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">Send Us a Message</h3>
+          <p class="text-gray-600 mb-6">Have information or tips? Fill out the form below and our team will get back to you promptly.</p>
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Full Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+              <input type="email" placeholder="Email Address" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <input type="tel" placeholder="Phone Number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            <input type="text" placeholder="Subject" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400" />
+            <textarea rows="5" placeholder="Your Message..." class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+            <button type="submit" class="mt-4 px-6 py-3 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors">Submit Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <div class="bg-gradient-to-br from-red-500 to-purple-500 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-1">
+            <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+            <p class="mb-4">Reach our headquarters in Thiruvananthapuram or connect via any of these channels:</p>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3"></i>Police HQ, Vazhuthacaud, Thiruvananthapuram, Kerala - 695010</li>
+              <li class="flex items-center"><i class="fas fa-phone-alt mr-3"></i>+91 471 2721547</li>
+              <li class="flex items-center"><i class="fas fa-envelope mr-3"></i>info@keralapolice.gov.in</li>
+              <li class="flex items-center"><i class="fas fa-clock mr-3"></i>Open 24/7</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Important Information</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+              <li>For emergencies, please call 100 or 112</li>
+              <li>Submit tips anonymously; your data is confidential</li>
+              <li>All information is handled with the utmost privacy</li>
+              <li>We connect individuals to rehabilitation services upon request</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer class="mt-auto bg-indigo-900 text-white py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Say No to Drugs</h3>
+        <p class="text-gray-300 mb-4">Together we can build a safer, drug-free Kerala. Report suspicious activities and seek support anytime.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-red-400 transition"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="hover:text-red-400 transition"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="hover:text-red-400 transition"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="hover:text-red-400 transition"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-red-400 transition">Home</a></li>
+          <li><a href="#about" class="hover:text-red-400 transition">About Campaign</a></li>
+          <li><a href="#blog-resources" class="hover:text-red-400 transition">Blog & News</a></li>
+          <li><a href="#contact-us" class="hover:text-red-400 transition">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Resources -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Resources</h4>
+        <ul class="space-y-2">
+          <li><a href="#help" class="hover:text-red-400 transition">Drug Awareness</a></li>
+          <li><a href="#overview" class="hover:text-red-400 transition">Prevention Programs</a></li>
+          <li><a href="#blog-resources" class="hover:text-red-400 transition">Rehab Centers</a></li>
+          <li><a href="#contact-us" class="hover:text-red-400 transition">File a Complaint</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-red-400"></i>HQ: Vazhuthacaud, Thiruvananthapuram</li>
+          <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-red-400"></i>+91 471 2721547</li>
+          <li class="flex items-center"><i class="fas fa-envelope mr-3 text-red-400"></i>info@keralapolice.gov.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-indigo-800 mt-12 pt-6 text-center text-gray-400">
+      &copy; 2025 Kerala Police. All rights reserved. | Say No to Drugs Campaign
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({ behavior: 'smooth' });
+        // close mobile menu
+        if(window.innerWidth < 768 && !navMenu.classList.contains('hidden')) {
+          navMenu.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
